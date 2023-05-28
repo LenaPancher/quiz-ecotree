@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+#quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', Arial, sans-serif;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    color: #3f6341;
+    font-size: 42px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rounded {
+    width: 54px;
+    height: 5px;
+    border-radius: 0.5rem;
+    background-color: #dca547;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#multipleChoiceComponent {
+    display: flex;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.btnChoice {
+    margin: 5% 0 5% 0;
+    border-color: #3f6341;
+    background-color: transparent;
+    border-radius: 0.625rem;
+    padding: 1rem 1.25rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: inherit;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#components {
+    margin-top: 3%;
+}
+
+#result {
+    margin-top: 5%;
 }
